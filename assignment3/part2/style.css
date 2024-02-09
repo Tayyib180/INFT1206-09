@@ -10,10 +10,12 @@ div {
   text-align: center;
   font-size: 1.1rem;        /*Using a converter to calculate 18 px to 1.1 rems*/
   background-color: rgb(161, 161, 246);
-  color: black;
+  color: white;
   border-radius: 10px;
   border: 1px solid rgb(100, 100, 255);
-
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2) 30%, rgb(161, 161, 246));
+  box-shadow: 10px 10px 10px #666666;
+  box-shadow: inset ;
 }
 
 /* Your CSS below here */
