@@ -2,8 +2,6 @@ html {
   font-family: sans-serif;
 }
 
-/* Your CSS below here */
-
 div {
   width: 200px;
   height: 200px;
@@ -15,7 +13,7 @@ div {
   color: white;
   border-radius: 10px;
   border: 1px solid rgb(100, 100, 255);
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2) 30%, rgb(161, 161, 246));
+  background-image: linear-gradient(to right bottom, rgb(161, 161, 246) 30%, rgba(0, 0, 0, 0.2));
   box-shadow: 5px 5px 6px #666666,
               inset 2px 2px 5px rgb(255, 255, 255),
               inset -2px -2px 5px rgba(0, 0, 0, 0.5);
