@@ -9,6 +9,8 @@ body {
   min-width: 1000px;
   max-width: 1400px;
   font-size: 10px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 /* Layout */
@@ -48,12 +50,36 @@ header, footer {
 h1 {
   font-size: 3rem;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3em; 
 }
 
 p, li {
   line-height: 2;
+  
+}
+
+p {
+  text-indent: 15 px;
+}
+
+a:hover, a:focus {
+  color: rgb(233, 169, 169);
+  outline: none;
+  text-decoration: none;  
+}
+
+a:link {
+  color: #a66;
+  background-image: url("external-link-52.png") no-repeat;
+  background-size: 30px;
+  
+}
+
+a:active {
+  color: rgb(93, 56, 56);
+  font-weight: 900;
 }
