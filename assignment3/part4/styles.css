@@ -14,13 +14,13 @@ img {
   font-size: 200%;
   padding: 50px 20px;
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1100px;
 }
 
 .grid {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 980px;
+  max-width: 1100px;
   display: flex;
   flex: wrap;
 }
@@ -52,7 +52,7 @@ nav a {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 1px;
 }
 
@@ -68,5 +68,6 @@ article {
 }
 
 aside {
-  flex: 1;
+  flex: 0.35;
+  padding-left: 20px;
 }
