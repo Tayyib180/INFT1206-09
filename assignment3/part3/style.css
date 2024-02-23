@@ -11,6 +11,7 @@ body {
   font-size: 10px;
   letter-spacing: 1px;
   word-spacing: 1px;
+  line-height: 1;
 }
 
 /* Layout */
@@ -38,6 +39,10 @@ header, section, aside, nav, footer {
   padding: 20px;
 }
 
+section > h2 + p{
+  text-indent: 20px;
+}
+
 /* header and footer */
 
 header, footer {
@@ -54,12 +59,16 @@ h1 {
 }
 
 h2 {
-  font-size: 3em; 
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style-type: square;
 }
 
 p, li {
   line-height: 2;
-  
 }
 
 p {
@@ -74,9 +83,14 @@ a:hover, a:focus {
 
 a:link {
   color: #a66;
-  background-image: url("external-link-52.png") no-repeat;
-  background-size: 30px;
-  
+}
+
+a[href*= "http"]{
+  background-image: url("external-link-52.png");
+  background-size: 10px; /* Adjust the size as needed */
+  background-position: right;
+  background-repeat: no-repeat; 
+  padding-right: 12px;
 }
 
 a:active {
