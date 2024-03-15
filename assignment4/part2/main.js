@@ -42,7 +42,5 @@ btn.addEventListener('click', function(){
 
         overlay.style.backgroundColor = "rgb(0 0 0 / 0%)";
     }
-
-
     
 })
