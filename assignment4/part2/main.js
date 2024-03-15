@@ -27,3 +27,10 @@ for(let i = 0; i < imageNames.length; i++){
 
 /* Wiring up the Darken/Lighten button */
 
+btn.addEventListener('click', function(){
+    const btnClass = btn.getAttribute('class');
+    if(btnClass === 'dark'){
+        
+    }
+    
+})
