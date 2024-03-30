@@ -109,6 +109,7 @@ class EvilCircle extends Shape {
     });
   }
 
+  
 }
 
 const balls = [];
