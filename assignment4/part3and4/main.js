@@ -6,6 +6,9 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+const para = document.querySelector('p');
+let count = 0;
+
 // function to generate random number
 
 function random(min, max) {
@@ -31,12 +34,11 @@ class Shape {
 
 class Ball {
   constructor(x, y, velX, velY, color, size) {
-    this.x = x;
-    this.y = y;
-    this.velX = velX;
-    this.velY = velY;
+    super(x, y, velX, velY);
+
     this.color = color;
     this.size = size;
+    this.exists = true;
   }
 
   draw() {
@@ -169,6 +171,10 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textContent = 'Ball count: ' + count;
+
+  balls.push(ball);
 }
 
 function loop() {
@@ -180,6 +186,10 @@ function loop() {
     ball.update();
     ball.collisionDetect();
   }
+
+  evilBall.draw();
+  evilBall.checkBounds();
+  evilBall.collisionDetect();
 
   requestAnimationFrame(loop);
 }
