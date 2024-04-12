@@ -248,3 +248,16 @@ audio {
 .comment-container li p:nth-child(2) {
   flex: 5;
 }
+
+#transcript{
+
+}
+
+#transcript{
+  display: block;
+  margin: 0 auto;
+  background: #333;
+  color: white;
+  width: 20%;
+  height: 2%;
+}
