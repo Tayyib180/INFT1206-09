@@ -57,10 +57,12 @@ div[class="nav"], article, footer, .secondary {
 
 article, footer, .secondary {
   padding: 10px 30px;
+  
 }
 
 article {
   margin-right: 10px;
+  
 }
 
 div[class="nav"] {
@@ -121,6 +123,7 @@ div[class="nav"] .search {
 
 main {
   display: flex;
+  
 }
 
 article {
@@ -141,6 +144,10 @@ table {
   width: 100%;
   background-color: rgb(164, 164, 237);
   border-collapse: collapse;
+}
+
+#tcaption{
+  font-family: 'Sonsie One', cursive;
 }
 
 th, td {
@@ -249,8 +256,8 @@ audio {
   flex: 5;
 }
 
-#transcript{
-
+#commentlabels{
+  font-size: 15px;
 }
 
 #transcript{
@@ -260,4 +267,10 @@ audio {
   color: white;
   width: 20%;
   height: 2%;
+}
+
+#transcriptComment{
+  background-color: #def;
+  display: block;
+  text-align: center;
 }

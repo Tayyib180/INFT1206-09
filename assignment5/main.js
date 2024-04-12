@@ -3,6 +3,10 @@
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
+const transcriptBtn = document.querySelector('#transcript');
+const transcriptComment = document.querySelector('#transcriptComment');
+
+
 commentWrapper.style.display = 'none';
 
 showHideBtn.onclick = function() {
@@ -15,6 +19,13 @@ showHideBtn.onclick = function() {
     commentWrapper.style.display = 'none';
   }
 };
+
+// transcript button functionality
+
+transcriptBtn.onclick = function(){
+  if(transcriptComment.textContent === "") transcriptComment.textContent = "This isn't really an audio file about bears, but it is an audio file that you can transcribe.";
+  else transcriptComment.textContent = "";
+}
 
 // functionality for adding a new comment via the comments form
 

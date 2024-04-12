@@ -28,7 +28,7 @@
 
       <form class="search">
         <input type="search" name="q" placeholder="Search query">
-        <input type="submit" value="Go!">
+        <input type="submit" value="Search!">
       </form>
     </div>
 
@@ -49,6 +49,7 @@
         Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.
         <br><br>
         <table>
+          <caption id="tcaption">Types of Bears</caption>
           <thead>
             <tr>
               <td>Bear Type</td>
@@ -83,11 +84,11 @@
         <br><br>
         Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.
         <br><br>
-        <img src="media/wild-bear.jpg">
+        <img src="media/wild-bear.jpg" alt="A brown bear standing in a shallow river.">
         <br><br>
         Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.
         <br><br>
-        <img src="media/urban-bear.jpg">
+        <img src="media/urban-bear.jpg" alt="A black and white picture of a bear in a large cage.">
         <br><br>
         Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.
         <br><br>
@@ -105,6 +106,8 @@
 
         <br>
         <button id="transcript">Show Transcript</button>
+        <br>
+        <transcript id="transcriptComment"></transcript>
         <br>
 
         <aside>
@@ -125,11 +128,11 @@
 
             <form class="comment-form">
               <div class="flex-pair">
-                Your name:
+                <p id="commentlabels">Your name:
                 <input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
-                Your comment:
+                <p id="commentlabels">Your comment:</p>
                 <input type="text" name="comment" id="comment" placeholder="Enter your comment">
               </div>
               <div>
